@@ -1,0 +1,1 @@
+<footer>copyright © Spiri</footer>
