@@ -1,6 +1,5 @@
 package com.spiri.themes.config;
 
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
@@ -15,7 +14,7 @@ public class WebInitializer implements WebApplicationInitializer {
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
-//        context.register(DataSourceConfig.class);
+        context.register(DataSourceConfig.class);
         context.register(ThemeMVCConfig.class);
 
         servletContext.addListener(new ContextLoaderListener(context));

@@ -3,6 +3,12 @@
 *.jar
 *.war
 *.ear
+*.zip
+*.log
+
+Learning Spring Application Development_Code/
+
+.metadata/
 
 .idea/
 .github/
