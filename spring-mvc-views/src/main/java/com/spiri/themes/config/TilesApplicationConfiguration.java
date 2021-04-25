@@ -38,7 +38,6 @@ public class TilesApplicationConfiguration implements WebMvcConfigurer {
     /**
      * Configure ResourceHandlers to serve static resources
      */
-
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/static/**").addResourceLocations("/static/");

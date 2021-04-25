@@ -71,11 +71,6 @@ public class IndexController {
         model.addAttribute("Title", "Index Title");
         model.addAttribute("Content", "Index Content");
 
-        User user = new User();
-        user.setUserId("hong1");
-        user.setUserNm("Gildong");
-        model.addAttribute("User", user);
-
         List list = new ArrayList<String>();
         list.add("111");
         list.add("222");
