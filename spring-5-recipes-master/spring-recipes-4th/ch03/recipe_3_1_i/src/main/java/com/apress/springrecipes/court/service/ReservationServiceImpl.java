@@ -30,7 +30,10 @@ public class ReservationServiceImpl implements ReservationService {
     @Override
     public List<Reservation> query(String courtName) {
 
-        return this.reservations.stream()
+        if(courtName.equals(""))
+            return this.reservations;
+        else
+            return this.reservations.stream()
                 .filter(reservation -> Objects.equals(reservation.getCourtName(), courtName))
                 .collect(Collectors.toList());
     }
