@@ -10,4 +10,4 @@
       </td>
 
 ## ReservationServiceImpl.java 수정
-Query 값이 없으면 전체 조회, 있으면 대로 조회
+- Query 값이 없으면 전체 조회, 있으면 대로 조회
