@@ -24,7 +24,11 @@
     <c:forEach items="${reservations}" var="reservation">
         <tr>
             <td>${reservation.courtName}</td>
-            <td><fmt:formatDate value="${reservation.date}" pattern="yyyy-MM-dd"/></td>
+            <td>
+                <fmt:formatDate value="${reservation.date}" pattern="yyyy-MM-dd"/>
+                <%--<fmt:parseDate value='${reservation.date}' var='r_date' pattern='yyyy-MM-dd'/>
+                <fmt:formatDate value="${r_date}" pattern="yyyy-MM-dd"/>--%>
+            </td>
             <td>${reservation.hour}</td>
             <td>${reservation.player.name}</td>
         </tr>
