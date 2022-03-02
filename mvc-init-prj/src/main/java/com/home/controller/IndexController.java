@@ -16,10 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.text.DateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 
 @Controller
 public class IndexController {
@@ -77,6 +74,12 @@ public class IndexController {
         list.add("333");
         model.addAttribute("list", list);
         return "index";
+    }
+
+    public void foo() {
+        String strings = {"foo", "bar"};
+
+        List<String> l = Arrays.asList();
     }
 
 

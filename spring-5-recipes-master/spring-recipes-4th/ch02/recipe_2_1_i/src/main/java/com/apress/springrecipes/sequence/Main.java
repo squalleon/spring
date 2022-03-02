@@ -15,5 +15,6 @@ public class Main {
 
         System.out.println(generator.getSequence());
         System.out.println(generator.getSequence());
+        System.out.println(generator.getSequence());
     }
 }

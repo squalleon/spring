@@ -12,7 +12,11 @@ public class Main {
 
         SequenceDao sequenceDao = context.getBean(SequenceDao.class);
 
-        System.out.println(sequenceDao.getNextValue("IT"));
-        System.out.println(sequenceDao.getNextValue("IT"));
+        System.out.println("start");
+        for (int i = 0; i <10; i++) {
+            System.out.println(sequenceDao.getSequence("IT"));
+            System.out.println(sequenceDao.getNextValue("IT"));
+        }
+        System.out.println("end");
     }
 }
